@@ -26,7 +26,9 @@ defmodule Generator do
   def header do
     tag(:header, [
       tag(:div, [ class: "container" ], [
-        tag(:h1, [ "darkness" ]),
+        tag(:h1, [
+          tag(:a, [ href: "/" ], [ "darkness" ])
+        ]),
         tag(:nav, [
           tag(:a, [ href: "/"                    ], [ "about me" ]),
           tag(:a, [ href: "/projects/index.html" ], [ "projects" ]),

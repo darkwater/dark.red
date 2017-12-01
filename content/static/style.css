@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
 html {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@ html {
     min-width: 1024px;
     background: #1d1f21;
     color: white;
-    font-family: 'Droid Sans Mono';
+    font-family: 'Droid Sans Mono', monospace;
     font-size: 14px;
 }
 
@@ -55,8 +57,7 @@ h1 {
     display: inline-block;
     /* width: 50%; */
     height: 64px;
-    color: rgba(0, 0, 0, 0.7);
-    font-family: 'Droid Sans Mono';
+    font-family: 'Droid Sans Mono', monospace;
     font-weight: bold;
     font-size: 48px;
     letter-spacing: -2px;
@@ -83,9 +84,10 @@ nav a {
 a[href] {
     color: cornflowerblue;
     transition: all 0.05s linear;
+    outline: 2px solid transparent;
 }
 
-a[href]:hover {
+a[href]:hover, a[href]:focus {
     color: white;
 }
 
@@ -131,7 +133,9 @@ ul#blog-index {
 #blog-index li {list-style: none;margin: 1em 0;}
 
 .content img {
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 code {
@@ -145,32 +149,35 @@ pre {
     box-shadow: 0 0 0 10px #1b1b1b;
 }
 
-.Special { color: #dadada; }
-.Keyword { color: #af87af; font-weight: bold; }
-.Define { color: #87afaf; }
-.Function { color: #81a2be; }
-.String {color: #b9ca4a;}
-.Constant { color: #d7875f; }
+.Constant    { color: #d7875f; }
+.Define      { color: #87afaf; }
+.Function    { color: #81a2be; }
+.Keyword     { color: #af87af; font-weight: bold; }
+.Special     { color: #dadada; }
+.String      { color: #b9ca4a; }
+.htmlArg     { color: #d75f5f; }
+.htmlTag     { color: #d75f5f; }
+.htmlTagName { color: #d75f5f; }
 
 pre code {
     background: none;
     color: inherit;
 }
 
-#projects-index {
+.projects-index {
     display: grid;
     padding: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px 30px;
 }
 
-#projects-index li {
+.projects-index li {
     list-style: none;
     width: 320px;
     height: 240px;
 }
 
-#projects-index a {
+.projects-index a {
     display: block;
     width: 100%;
     height: 100%;
@@ -181,6 +188,31 @@ pre code {
     background-size: 320px 240px;
 }
 
-#projects-index a:hover {
+.projects-index a:hover, .projects-index a:focus {
     filter: brightness(125%);
+}
+
+a[href]:focus {
+    outline-color: rgba(158, 5, 5, 0.47);
+}
+
+
+hr {
+    border: none;
+    border-top: 2px dashed #292929;
+}
+
+blockquote {
+    float: right;
+    margin: 0;
+}
+
+h1 a[href] {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h1 a[href]:hover {
+    color: rgba(20, 0, 0, 0.7);
+    transition-duration: 1s;
 }
