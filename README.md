@@ -1,4 +1,4 @@
-# Generator
+# dark.red
 
 This is my personal homepage. See [dark.red](https://dark.red/).
 

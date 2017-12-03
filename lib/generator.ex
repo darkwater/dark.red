@@ -18,6 +18,14 @@ defmodule Generator do
             tag(:div, [ class: "container" ], [
               body
             ])
+          ]),
+          tag(:script, [ type: "text/javascript" ], ~s[
+            // Having all images on 2x resolution makes them look nicer on hidpi screens.
+            // I wanted to have no Javascript here at all but this is the nicest solution
+            // since Firefox doesn't support the (unofficial) zoom CSS property.
+            document.querySelectorAll(".content img").forEach(img => {
+              img.width = img.naturalWidth / 2;
+            });
           ])
         ])
       ]))
