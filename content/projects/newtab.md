@@ -1,6 +1,6 @@
-- title: New tab page
+- title: new tab page
 - cover: /static/newtab-cover.png
-- category: ongoing
+- category: recent
 
 An alternative new tab page for Chrome. It uses bookmarks for the links, so to add a link you just add a bookmark in a
 specific folder.

@@ -145,8 +145,8 @@ code {
 
 pre {
     background: #1b1b1b;
-    border-radius: 2px;
     box-shadow: 0 0 0 10px #1b1b1b;
+    padding: 3px 0px;
 }
 
 .Constant    { color: #d7875f; }
@@ -158,6 +158,11 @@ pre {
 .htmlArg     { color: #d75f5f; }
 .htmlTag     { color: #d75f5f; }
 .htmlTagName { color: #d75f5f; }
+
+.term-green      { color: #b8d68c; }
+.term-green-bold { color: #a0cf5d; font-weight: bold; }
+.term-gray       { color: #404040; }
+.term-gray-bold  { color: #404040; font-weight: bold; }
 
 pre code {
     background: none;

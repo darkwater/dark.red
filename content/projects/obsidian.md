@@ -1,4 +1,4 @@
-- title: Obsidian
+- title: obsidian
 - cover: /static/obsidian-cover.png
 - category: recent
 

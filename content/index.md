@@ -14,5 +14,8 @@ find me elsewhere
 highlights
 ----------
 
-- [New tab page](/projects/newtab.html) _(project)_  
+- [desktop](/projects/desktop.html) _(project)_  
+  My desktop environment, continuously evolving over time.
+
+- [new tab page](/projects/newtab.html) _(project)_  
   A Chrome extension that replaces the default tab page with lists of links, managed through bookmarks.

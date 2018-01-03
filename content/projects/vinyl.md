@@ -1,4 +1,4 @@
-- title: Vinyl
+- title: vinyl
 - cover: /static/vinyl-cover.png
 - category: recent
 

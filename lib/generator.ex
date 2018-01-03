@@ -38,9 +38,9 @@ defmodule Generator do
           tag(:a, [ href: "/" ], [ "darkness" ])
         ]),
         tag(:nav, [
-          tag(:a, [ href: "/"                    ], [ "about me" ]),
-          tag(:a, [ href: "/projects/index.html" ], [ "projects" ]),
-          tag(:a, [ href: "/blog/index.html"     ], [ "blog" ]),
+          tag(:a, [ href: "/"          ], [ "about me" ]),
+          tag(:a, [ href: "/projects/" ], [ "projects" ]),
+          tag(:a, [ href: "/blog/"     ], [ "blog" ]),
         ])
       ])
     ])
